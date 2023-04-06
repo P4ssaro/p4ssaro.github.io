@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pássaro</title>
+  <link rel="icon" type="x-icon" href="pássaro.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <style>header{background-color: var(--secondary-color);}body{background-color:var(--secondary-color);}</style>
+	<header>
+		<nav>
+			<a href="search">Pássaro</a>
+			<ul>
+				<li><a href="index">home</a></li>
+				<li><a href="search">search</a></li>
+				<li><a href="docs">docs</a></li>
+			</ul>
+		</nav>
+	</header>
+    <div class="article">
+        <h2>Docs</h2>
+        <p>To use Pássaro, you'll need to specify your desired search engine first, with "--" and its code. Every search engine in Pássaro has its name, like Wikipedia (it would be "--wikipedia"), and its abbreviation and other casual forms of writing, for example, wikipedia has 3, "--wikipedia", "--wkp" and "--wiki". There is no general rule for abbreviating the names, but most of the time there is only 2, the full name (wikipedia) a set abbreviation (wkp), and sometimes alternative forms of writing or alternative abbreviations, like "wiki". Another case is duckduckgo's, it has the --duckduckgo (full name) name, the --duck (alternative) name, the --dgg (set abbreviation) and the --dggo (alternative abbreviation) name. A reminder that binominal search engines, like Duck Duck Go, will have their spaces or "-"s removed, like "duckduckgo" and that all names must be in lowercase. Here is the full list of abbreviations:</p>
+        <p>*To use them, in the search bar type: <code>--[search engine name]: [your input]</code>.</p>
+        <table>
+            <thead>
+              <tr>
+                <th>SEARCH ENGINE</th>
+                <th>FULL NAME</th>
+                <th>ABBREVIATION</th>
+                <th>OTHERS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Wikipedia</td>
+                <td>wikipedia</td>
+                <td>wkp</td>
+                <td>wiki</td>
+              </tr>
+              <tr>
+                <td>Google</td>
+                <td>google</td>
+                <td>ggl</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>Yahoo</td>
+                <td>yahoo</td>
+                <td>yho</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>Brave Search</td>
+                <td>bravesearch</td>
+                <td>brs</td>
+                <td>brave</td>
+              </tr>
+              <tr>
+                <td>Duck Duck Go</td>
+                <td>duckduckgo</td>
+                <td>dgg</td>
+                <td>duck/dggo</td>
+              </tr>
+              <tr>
+                <td>Wiby</td>
+                <td>wiby</td>
+                <td>wby</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>Bing</td>
+                <td>bing</td>
+                <td>bng</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>Mojeek</td>
+                <td>mojeek</td>
+                <td>mjk</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>Startpage</td>
+                <td>startpage</td>
+                <td>stp</td>
+                <td>sp</td>
+              </tr>
+              <tr>
+                <td>Aol</td>
+                <td>aol</td>
+                <td>none</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>Excite</td>
+                <td>excite</td>
+                <td>exc</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>Lycos</td>
+                <td>lycos</td>
+                <td>lyc</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>You.com</td>
+                <td>you</td>
+                <td>none</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>Yep</td>
+                <td>yep</td>
+                <td>none</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>Gibiru</td>
+                <td>gibiru</td>
+                <td>gbr</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>Reddit</td>
+                <td>reddit</td>
+                <td>rdd</td>
+                <td>red</td>
+              </tr>
+              <tr>
+                <td>Neeva</td>
+                <td>neeva</td>
+                <td>nva</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>Search Encrypt</td>
+                <td>searchencrypt</td>
+                <td>scr</td>
+                <td>se</td>
+              </tr>
+              <tr>
+                <td>Swisscows</td>
+                <td>swisscows</td>
+                <td>swc</td>
+                <td>sc</td>
+              </tr>
+              <tr>
+                <td>Ecosia</td>
+                <td>ecosia</td>
+                <td>ecs</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>Qmamu</td>
+                <td>qmamu</td>
+                <td>qmm</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>giveWater</td>
+                <td>givewater</td>
+                <td>gvw</td>
+                <td>gw</td>
+              </tr>
+              <tr>
+                <td>GitHub</td>
+                <td>github</td>
+                <td>gth</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>Presearch</td>
+                <td>presearch</td>
+                <td>prs</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>Google Schoolar</td>
+                <td>googleschoolar</td>
+                <td>ggs</td>
+                <td>gs</td>
+              </tr>
+              <tr>
+                <td>Seekr</td>
+                <td>seekr</td>
+                <td>skr</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>MWMBL</td>
+                <td>mwmbl</td>
+                <td>none</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>AstianGO</td>
+                <td>astiango</td>
+                <td>asg</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>Urban Dictionary</td>
+                <td>urbandictionary</td>
+                <td>ubd</td>
+                <td>ud</td>
+              </tr>
+              <tr>
+                <td>Torry</td>
+                <td>torry</td>
+                <td>trr</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>OneSearch</td>
+                <td>onesearch</td>
+                <td>osr</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>Monocles</td>
+                <td>monocles</td>
+                <td>mnc</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>PriEco</td>
+                <td>prieco</td>
+                <td>prc</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>YouTube</td>
+                <td>youtube</td>
+                <td>ytb</td>
+                <td>yt</td>
+              </tr>
+              <tr>
+                <td>Andi</td>
+                <td>andi</td>
+                <td>and</td>
+                <td>none</td>
+              </tr>
+              <tr>
+                <td>Dogpile</td>
+                <td>dogpile</td>
+                <td>dgp</td>
+                <td>dp/dog</td>
+              </tr>
+            </tbody>
+        </table>
+        <br><sup>disclaimer ---> the position of the cells don't mean nor change anything, they are ordered completely randomly and not in a rank.</sup>
+        <p>Pássaro, by Whivak, made in Paraíba.</p>        
+          
+    </div>
+
+	<footer>Pássaro, by Whivak, made in Paraíba.</footer>
+	<script src="searchengines.js"></script>
+</body>
+</html>
