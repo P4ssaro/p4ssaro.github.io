@@ -20,8 +20,8 @@ form.addEventListener('submit', (event) => {
 
     '--duckduckgo': 'https://duckduckgo.com',
     '--duck': 'https://duckduckgo.com',
-    '--dggo': 'https://duckduckgo.com',
     '--ddg': 'https://duckduckgo.com',
+    '--ddgo': 'https://duckduckgo.com',
 
     '--wikipedia': 'https://wikipedia.org/wiki/Special:Search?go=Go&search=',
     '--wiki': 'https://wikipedia.org/wiki/Special:Search?go=Go&search=',
@@ -121,11 +121,19 @@ form.addEventListener('submit', (event) => {
     '--dogpile': 'https://www.dogpile.com/serp',
     '--dgp': 'https://www.dogpile.com/serp',
     '--dp': 'https://www.dogpile.com/serp',
-    '--dog': 'https://www.dogpile.com/serp',
+
+    '--metager': 'https://metager.org/meta/meta.ger3',
+    '--mtg': 'https://metager.org/meta/meta.ger3',
+    '--mg': 'https://metager.org/meta/meta.ger3',
+
+    '--bearblog': 'https://bearblog.dev/search',
+    '--brb': 'https://bearblog.dev/search',
+    '--bb': 'https://bearblog.dev/search',
+    '--bear': 'https://bearblog.dev/search',
   };
 
   const inputText = input.value.trim();
-const [searchEngine, query] = inputText.split(':').map((part) => part.trim().toLowerCase());
+  const [searchEngine, query] = inputText.split(':').map((part) => part.trim().toLowerCase());
 
 if (searchEngine in searchEngineMap) {
   const searchUrl = searchEngineMap[searchEngine];
@@ -134,14 +142,25 @@ if (searchEngine in searchEngineMap) {
   if (['--wikipedia', '--wkp', '--wiki'].includes(searchEngine)) {
     const encodedQuery = encodeURIComponent(query).replace(/%20/g, ' ');
     redirectUrl = `${searchUrl}${encodedQuery}`;
-  } else {
-    const encodedQuery = encodeURIComponent(query).replace(/%20/g, ' ');
-    const searchParams = new URLSearchParams();
+  } 
+  
+    else {
+      const encodedQuery = encodeURIComponent(query).replace(/%20/g, ' ');
+      const searchParams = new URLSearchParams();
+      
     if (['--swisscows', '--swc', '--sc', '--seekr', '--skr'].includes(searchEngine)) {
       searchParams.set('query', encodedQuery);
-    } else if (['--urbandictionary', '--urd', '--ud'].includes(searchEngine)) {
+    } 
+    
+    else if (['--urbandictionary', '--urd', '--ud'].includes(searchEngine)) {
       searchParams.set('term', encodedQuery);
-    } else {
+    } 
+    
+    else if (['--metager', '--mtg', '--mg'].includes(searchEngine)) {
+      searchParams.set('eingabe', encodedQuery);
+    } 
+    
+    else {
       searchParams.set('q', encodedQuery);
     }
     redirectUrl = `${searchUrl}?${searchParams.toString()}`;

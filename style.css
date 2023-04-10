@@ -14,6 +14,15 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 header {
   padding: 20px;
 }
@@ -54,6 +63,7 @@ nav ul li a {
 .article {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
   width: 80%;
   color: var(--text-color);
 }
