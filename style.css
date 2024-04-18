@@ -52,10 +52,12 @@ nav ul li a {
 }
 
 .article {
+  text-align: justify;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
   width: 80%;
+  
   color: var(--text-color);
 }
 
@@ -133,6 +135,8 @@ footer {
 table {
   border-collapse: collapse;
   padding: 7px;
+  float: right;
+  margin-left: 20px
 
 }
 
