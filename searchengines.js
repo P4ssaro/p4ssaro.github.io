@@ -108,8 +108,8 @@ form.addEventListener('submit', (event) => {
     '--monocles': 'https://monocles.de/search',
     '--mnc': 'https://monocles.de/search',
 
-    '--prieco': 'https://search.jojoyou.org/',
-    '--prc': 'https://search.jojoyou.org/',
+    '--prieco': 'https://prieco.net/',
+    '--prc': 'https://prieco.net/',
 
     '--youtube': 'https://www.youtube.com/results',
     '--ytb': 'https://www.youtube.com/results',
