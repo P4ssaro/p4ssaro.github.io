@@ -66,6 +66,7 @@ form.addEventListener('submit', (event) => {
     '--swisscows': 'https://swisscows.com/en/web',
     '--swc': 'https://swisscows.com/en/web',
     '--sc': 'https://swisscows.com/en/web',
+    '--swiss': 'https://swisscows.com/en/web',
 
     '--ecosia': 'https://www.ecosia.org/search',
     '--ecs': 'https://www.ecosia.org/search',
@@ -150,7 +151,7 @@ if (searchEngine in searchEngineMap) {
       const searchParams = new URLSearchParams();
 
     // FOR ENGINES THAT USE "QUERY" INSTEAD OF "Q"
-    if (['--swisscows', '--swc', '--sc', '--seekr', '--skr'].includes(searchEngine)) {
+    if (['--swisscows', '--swc', '--sc', '--swiss', '--seekr', '--skr'].includes(searchEngine)) {
       searchParams.set('query', encodedQuery);
     } 
 
