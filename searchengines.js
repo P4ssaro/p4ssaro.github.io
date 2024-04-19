@@ -87,13 +87,13 @@ form.addEventListener('submit', (event) => {
     '--ggs': 'https://scholar.google.com/scholar',
     '--gs': 'https://scholar.google.com/scholar',
 
-    '--seekr': 'https://www.seekr.com/search',
-    '--skr': 'https://www.seekr.com/search',
+    '--seekr': 'https://news.seekr.com/search',
+    '--skr': 'https://news.seekr.com/search',
 
     '--mwmbl': 'https://mwmbl.org/',
 
-    '--astiango': 'https://astiango.com/search.php',
-    '--asg': 'https://astiango.com/search.php',
+    '--astiango': 'https://astiango.co/search/web=',
+    '--asg': 'https://astiango.co/search/web=',
     
     '--urbandictionary': 'https://www.urbandictionary.com/define.php',
     '--ubd': 'https://www.urbandictionary.com/define.php',
@@ -138,8 +138,8 @@ form.addEventListener('submit', (event) => {
 if (searchEngine in searchEngineMap) {
   const searchUrl = searchEngineMap[searchEngine];
   let redirectUrl = '';
-
-  if (['--wikipedia', '--wkp', '--wiki'].includes(searchEngine)) {
+  
+  if (['--wikipedia', '--wkp', '--wiki', '--asg', '--astiango'].includes(searchEngine)) {
     const encodedQuery = encodeURIComponent(query).replace(/%20/g, ' ');
     redirectUrl = `${searchUrl}${encodedQuery}`;
   } 
@@ -147,18 +147,26 @@ if (searchEngine in searchEngineMap) {
     else {
       const encodedQuery = encodeURIComponent(query).replace(/%20/g, ' ');
       const searchParams = new URLSearchParams();
-      
+
+    // FOR ENGINES THAT USE "QUERY" INSTEAD OF "Q"
     if (['--swisscows', '--swc', '--sc', '--seekr', '--skr'].includes(searchEngine)) {
       searchParams.set('query', encodedQuery);
     } 
-    
+
+    // FOR ENGINES THAT USE "TERM" INSTEAD OF "Q"
     else if (['--urbandictionary', '--urd', '--ud'].includes(searchEngine)) {
       searchParams.set('term', encodedQuery);
     } 
-    
+
+    // FOR ENGINES THAT USE "EINGABE" INSTEAD OF "Q"
     else if (['--metager', '--mtg', '--mg'].includes(searchEngine)) {
       searchParams.set('eingabe', encodedQuery);
     } 
+
+    // FOR ENGINES THAT ARE ABSOLUTELY FUCKED UP LIKE ASTIAN GO AND IDK HOW THEY WORK
+    // else if ([].includes(searchEngine)) {
+    //  searchParams.set('eingabe', encodedQuery);
+    // } 
     
     else {
       searchParams.set('q', encodedQuery);
