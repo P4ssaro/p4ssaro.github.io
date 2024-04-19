@@ -138,7 +138,8 @@ form.addEventListener('submit', (event) => {
 if (searchEngine in searchEngineMap) {
   const searchUrl = searchEngineMap[searchEngine];
   let redirectUrl = '';
-  
+
+  // FOR SEARCH ENGINES THAT ARE FUCKED UP, THAT I PRETTY MUCH IDK HOW THEY WORK, AND THAT TOOK A LOOOOOOONG WHILE TO FIGURE IT (DO IT YOURSELF IF YOU WANT TO CHANGE IT)
   if (['--wikipedia', '--wkp', '--wiki', '--asg', '--astiango'].includes(searchEngine)) {
     const encodedQuery = encodeURIComponent(query).replace(/%20/g, ' ');
     redirectUrl = `${searchUrl}${encodedQuery}`;
