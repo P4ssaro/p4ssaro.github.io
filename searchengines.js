@@ -136,6 +136,14 @@ form.addEventListener('submit', (event) => {
     '--ydx' : 'https://yandex.com/search',
     '--ya' : 'https://yandex.com/search',
     '--Яндекс' : 'https://yandex.com/search',
+
+    '--librey' : 'https://librey.devol.it/search.php',
+    '--lby' : 'https://librey.devol.it/search.php',
+
+    '--shuriken' : 'https://shuriken.pm/search.php',
+    '--shk' : 'https://shuriken.pm/search.php',
+
+    '--araa' : 'https://araa.extravi.dev/search',
   };
 
   const inputText = input.value.trim();
