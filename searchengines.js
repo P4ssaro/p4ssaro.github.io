@@ -131,6 +131,11 @@ form.addEventListener('submit', (event) => {
     '--brb': 'https://bearblog.dev/search',
     '--bb': 'https://bearblog.dev/search',
     '--bear': 'https://bearblog.dev/search',
+
+    '--yandex' : 'https://yandex.com/search',
+    '--ydx' : 'https://yandex.com/search',
+    '--ya' : 'https://yandex.com/search',
+    '--Яндекс' : 'https://yandex.com/search',
   };
 
   const inputText = input.value.trim();
