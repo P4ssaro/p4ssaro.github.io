@@ -178,10 +178,10 @@ if (searchEngine in searchEngineMap) {
       searchParams.set('eingabe', encodedQuery);
     } 
 
-    // FOR ENGINES THAT ARE ABSOLUTELY FUCKED UP LIKE ASTIAN GO AND IDK HOW THEY WORK
-    // else if ([].includes(searchEngine)) {
-    //  searchParams.set('eingabe', encodedQuery);
-    // } 
+    // FOR ENGINES THAT USE "TEXT" INSTEAD OF "Q"
+    else if (['--yandex', '--ydx', '--ya', '--Яндекс'].includes(searchEngine)) {
+      searchParams.set('text', encodedQuery);
+    } 
     
     else {
       searchParams.set('q', encodedQuery);
