@@ -144,6 +144,15 @@ form.addEventListener('submit', (event) => {
     '--shk' : 'https://shuriken.pm/search.php',
 
     '--araa' : 'https://araa.extravi.dev/search',
+
+    '--stract' : 'https://stract.com/search',
+    '--str' : 'https://stract.com/search',
+
+    '--tempest' : 'https://www.tempest.com/search',
+    '--tmp' : 'https://www.tempest.com/search',
+
+    '--4get' : 'https://4get.ca/web',
+    '--4' : 'https://4get.ca/web',
   };
 
   const inputText = input.value.trim();
@@ -181,7 +190,12 @@ if (searchEngine in searchEngineMap) {
     // FOR ENGINES THAT USE "TEXT" INSTEAD OF "Q"
     else if (['--yandex', '--ydx', '--ya', '--Яндекс'].includes(searchEngine)) {
       searchParams.set('text', encodedQuery);
-    } 
+    }
+
+    // FOR ENGINES THAT USE "S" INSTEAD OF "Q"
+    else if (['--4get', '--4'].includes(searchEngine)) {
+      searchParams.set('s', encodedQuery);
+    }
     
     else {
       searchParams.set('q', encodedQuery);
