@@ -1,12 +1,14 @@
 # Pássaro Search
 Pássaro is a metasearch engine that serves as an universal search box for 35+ search engines and websites, not needing to visit each specific website, instead, just typing its name and be redirected to this website with the search you made in Pássaro's search bar.
 
-Onion only, country restricted and non-english only search engines are not included nor will be, that is why Haystack*, Qwant*, Baidu and others aren't included.
+\- _By Pyrosfere_
+
+---
+
+**Onion only, country restricted and non-english only search engines are not included nor will be, that is why Haystack\*, Qwant\*, Baidu\* and others aren't included.**
 
 1* Torry and others have clearnet search by the way, so this doesn't apply to it
 
 2* It isn't even avaliable on my country so I definetly won't add it until it stops being country-restricted
 
 3* Yandex search, even though it is Russian, has an English version, while Baidu doesn't
-
-\- _By Pyrosfere_
