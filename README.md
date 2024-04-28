@@ -12,3 +12,7 @@ Pássaro is a metasearch engine that serves as an universal search box for 45+ s
 2* It isn't even avaliable on my country so I definetly won't add it until it stops being country-restricted
 
 3* Yandex search, even though it is Russian, has an English version, while Baidu doesn't
+
+---
+
+**Not all console/text-based browsers may work on the console.html, as it was only tested with Links and Browsh.**
