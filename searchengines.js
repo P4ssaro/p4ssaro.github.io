@@ -153,6 +153,25 @@ form.addEventListener('submit', (event) => {
 
     '--4get' : 'https://4get.ca/web',
     '--4' : 'https://4get.ca/web',
+
+    // SEARXNG INSTANCES
+
+    '--xng-privau' : 'https://priv.au/search',
+    '--xng-inetol' : 'https://search.inetol.net/search',
+    '--xng-hu' : 'https://searx.hu/search',
+    '--xng-searxngsite' : 'https://searxng.site/search',
+    '--xng-rhscz' : 'https://search.rhscz.eu/search',
+    '--xng-indst' : 'https://search.indst.eu/search',    
+    '--xng-paulgo' : 'https://paulgo.io/search',
+    '--xng-hbubli' : 'https://search.hbubli.cc/search',
+    '--xng-bushitme' : 'https://search.bus-hit.me/search',
+    
+    '--xng-canada' : 'https://searxng.ca',
+    '--xng-ca' : 'https://searxng.ca',
+
+    '--xng-belgium' : 'https://searx.be/search',
+    '--xng-be' : 'https://searx.be/search',
+    
   };
 
   const inputText = input.value.trim();
