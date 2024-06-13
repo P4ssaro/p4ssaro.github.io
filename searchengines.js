@@ -157,6 +157,10 @@ form.addEventListener('submit', (event) => {
     '--ggsearch' : 'https://ggsearch.eu.org/search',
     '--ggs' : 'https://ggsearch.eu.org/search',
 
+    '--hearchco' : 'https://hearch.co/search',
+    '--hch' : 'https://hearch.co/search',
+    '--hearch' : 'https://hearch.co/search',
+
     // SEARXNG INSTANCES
 
     '--xng-privau' : 'https://priv.au/search',
