@@ -153,6 +153,9 @@ form.addEventListener('submit', (event) => {
 
     '--4get' : 'https://4get.ca/web',
     '--4' : 'https://4get.ca/web',
+    
+    '--ggsearch' : 'https://ggsearch.eu.org/search',
+    '--ggs' : 'https://ggsearch.eu.org/search',
 
     // SEARXNG INSTANCES
 
