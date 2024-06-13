@@ -161,6 +161,10 @@ form.addEventListener('submit', (event) => {
     '--hch' : 'https://hearch.co/search',
     '--hearch' : 'https://hearch.co/search',
 
+    '--fileinfo' : 'https://fileinfo.com/extension/',
+    '--flnf' : 'https://fileinfo.com/extension/',
+    '--file' : 'https://fileinfo.com/extension/',
+    
     // SEARXNG INSTANCES
 
     '--xng-privau' : 'https://priv.au/search',
@@ -216,7 +220,7 @@ if (searchEngine in searchEngineMap) {
   let redirectUrl = '';
 
   // FOR SEARCH ENGINES THAT ARE FUCKED UP, THAT I PRETTY MUCH IDK HOW THEY WORK, AND THAT TOOK A LOOOOOOONG WHILE TO FIGURE IT (DO IT YOURSELF IF YOU WANT TO CHANGE IT)
-  if (['--wikipedia', '--wkp', '--wiki', '--asg', '--astiango'].includes(searchEngine)) {
+  if (['--wikipedia', '--wkp', '--wiki', '--asg', '--astiango', '--flnf', '--fileinfo', '--file'].includes(searchEngine)) {
     const encodedQuery = encodeURIComponent(query).replace(/%20/g, ' ');
     redirectUrl = `${searchUrl}${encodedQuery}`;
   } 
@@ -249,7 +253,7 @@ if (searchEngine in searchEngineMap) {
     else if (['--4get', '--4'].includes(searchEngine)) {
       searchParams.set('s', encodedQuery);
     }
-    
+      
     else {
       searchParams.set('q', encodedQuery);
     }
