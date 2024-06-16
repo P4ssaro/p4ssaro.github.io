@@ -165,6 +165,9 @@ form.addEventListener('submit', (event) => {
     '--metasearch' : 'https://s.matdoes.dev/search',
     '--mts' : 'https://s.matdoes.dev/search',
     '--meta' : 'https://s.matdoes.dev/search',
+
+    '--marginalia' : 'https://search.marginalia.nu/search',
+    '--mgn' : 'https://search.marginalia.nu/search',
     
     // SEARXNG INSTANCES
 
@@ -238,7 +241,7 @@ form.addEventListener('submit', (event) => {
     // LIBREX INSTANCES
     // BY THE WAY, LIBREX IS DEPRECATED AND ONLY DECENTRALA IS STILL RUNNING IT. THE OTHER URLS ARE KEPT UP FOR ARCHIVING PURPOSES.
 
-    '--lbx-zzls' : 'https://search.php',
+    '--lbx-zzls' : 'https://librex.zzls.xyz/search.php',
     '--lbx-me' : 'https://librex.me/search.php',
     '--lbx-dyox' : 'https://s.dyox.in/search.php',
     '--lbx-spaceint' : 'https://search.spaceint.fr/search.php',
@@ -254,6 +257,30 @@ form.addEventListener('submit', (event) => {
     '--lbx-baczek' : 'https://librex.baczek.me/search.php',
     '--lbx-benike' : 'https://lx.benike.monster/search.php',
     '--lbx-decentrala' : 'https://search.decentrala.org/search.php',
+  
+    // 4GET INSTANCES
+
+    '--4get-ggtyler' : 'https://4g.ggtyler.dev/web',
+    '--4get-hbubli' : 'https://4get.hbubli.cc/web',
+    '--4get-zzls' : 'https://4getus.zzls.xyz/web',
+    '--4get-zzls2' : 'https://4get.zzls.xyz/web',
+    '--4get-ch' : 'https://4get.ch/web',
+    '--4get-lunar' : 'https://4get.lunar.icu/web',
+    '--4get-sijh' : 'https://4get.sijh.net/web',
+    '--4get-ca' : 'https://4get.ca/web',
+    '--4get-sudovanilla' : 'https://4get.sudovanilla.org/web',
+    '--4get-neco' : 'https://4get.neco.lol/web',
+    '--4get-kizuki' : 'https://4get.kizuki.lol/web',
+    '--4get-sillycomputer' : 'https://4get.silly.computer/web',
+    '--4get-edmateo' : 'https://4get.edmateo.site/web',
+    '--4get-ducksparty' : 'https://4get.ducks.party/web',
+
+    // ARAA INSTANCES
+
+    '--araa-extravi' : 'https://araa.extravi.dev/search',
+    '--araa-tailsx' : 'https://tailsx.com/search',
+    '--araa-sudovanilla' : 'https://as.sudovanilla.org/search',
+    
   };
 
   const inputText = input.value.trim();
