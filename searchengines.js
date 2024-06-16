@@ -137,9 +137,6 @@ form.addEventListener('submit', (event) => {
     '--ya' : 'https://yandex.com/search',
     '--Яндекс' : 'https://yandex.com/search',
 
-    '--librey' : 'https://librey.devol.it/search.php',
-    '--lby' : 'https://librey.devol.it/search.php',
-
     '--shuriken' : 'https://shuriken.pm/search.php',
     '--shk' : 'https://shuriken.pm/search.php',
 
@@ -164,6 +161,10 @@ form.addEventListener('submit', (event) => {
     '--fileinfo' : 'https://fileinfo.com/extension/',
     '--flnf' : 'https://fileinfo.com/extension/',
     '--file' : 'https://fileinfo.com/extension/',
+
+    '--metasearch' : 'https://s.matdoes.dev/search',
+    '--mts' : 'https://s.matdoes.dev/search',
+    '--meta' : 'https://s.matdoes.dev/search',
     
     // SEARXNG INSTANCES
 
@@ -203,13 +204,55 @@ form.addEventListener('submit', (event) => {
     '--xng-ngntf' : 'https://search.ngn.tf/search',
     '--xng-baresearch' : 'https://baresearch.org/search',
     '--xng-incogniweb' : 'https://search.incogniweb.net/search',
-    
-    '--xng-canada' : 'https://searxng.ca',
+    '--xng-disroot' : 'https://search.disroot.org/search',
     '--xng-ca' : 'https://searxng.ca',
-
-    '--xng-belgium' : 'https://searx.be/search',
     '--xng-be' : 'https://searx.be/search',
-    
+
+    // LIBREY INSTANCES
+
+    '--lby-revvy' : 'https://search.revvy.de/search.php',
+    '--lby-ahwx' : 'https://search.ahwx.org/search.php',
+    '--lby-ahwx2' : 'https://search2.ahwx.org/search.php',
+    '--lby-davidovski' : 'https://search.davidovski.xyz/search.php',
+    '--lby-owo' : 'https://ly.owo.si/search.php',
+    '--lby-org' : 'https://librey.org/search.php',
+    '--lby-milivojevic' : 'https://librey.milivojevic.in.rs/search.php',
+    '--lby-franklyflawless' : 'https://librey.franklyflawless.org/search.php',
+    '--lby-glassprpl' : 'https://glass.prpl.wtf/search.php',
+    '--lby-uk' : 'https://librex.uk.to/search.php',
+    '--lby-ixtc' : 'https://librey.ix.tc/search.php',
+    '--lby-yuru' : 'https://search.funami.tech/search.php',
+    '--lby-retrohax' : 'https://librex.retro-hax.net/search.php',
+    '--lby-nohost' : 'https://librex.nohost.network/search.php',
+    '--lby-pabloferreiro' : 'https://search.pabloferreiro.es/search.php',
+    '--lby-baczek' : 'https://librey.baczek.me/search.php',
+    '--lby-benike' : 'https://lx.benike.me/search.php',
+    '--lby-seitan' : 'https://search.seitan-ayoub.lol/search.php',
+    '--lby-myroware' : 'https://librey.myroware.net/search.php',
+    '--lby-nezumi' : 'https://librey.nezumi.party/search.php',
+    '--lby-zeroish' : 'https://search.zeroish.xyz/search.php',
+    '--lby-nirn' : 'https://librey.nirn.quest/search.php',
+    '--lby-devol' : 'https://librey.devol.it/search.php',
+
+    // LIBREX INSTANCES
+    // BY THE WAY, LIBREX IS DEPRECATED AND ONLY DECENTRALA IS STILL RUNNING IT. THE OTHER URLS ARE KEPT UP FOR ARCHIVING PURPOSES.
+
+    '--lbx-zzls' : 'https://search.php',
+    '--lbx-me' : 'https://librex.me/search.php',
+    '--lbx-dyox' : 'https://s.dyox.in/search.php',
+    '--lbx-spaceint' : 'https://search.spaceint.fr/search.php',
+    '--lbx-medreyk' : 'https://search.madreyk.xyz/search.php',
+    '--lbx-pabloferreiro' : 'https://search.pabloferreiro.es/search.php',
+    '--lbx-pufe' : 'https://librex.pufe.org/search.php',
+    '--lbx-ratakor' : 'https://librex.ratakor.com/search.php',
+    '--lbx-tildevarsh' : 'https://search.tildevarsh.in/search.php',
+    '--lbx-myroware' : 'https://librex.myroware.eu/search.php',
+    '--lbx-bloatcat' : 'https://librex.bloatcat.tk/search.php',
+    '--lbx-retrohax' : 'https://librex.retro-hax.net/search.php',
+    '--lbx-zeroish' : 'https://search.zeroish.xyz/search.php',
+    '--lbx-baczek' : 'https://librex.baczek.me/search.php',
+    '--lbx-benike' : 'https://lx.benike.monster/search.php',
+    '--lbx-decentrala' : 'https://search.decentrala.org/search.php',
   };
 
   const inputText = input.value.trim();
