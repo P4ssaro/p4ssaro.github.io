@@ -233,6 +233,7 @@ form.addEventListener('submit', (event) => {
     '--lby-zeroish' : 'https://search.zeroish.xyz/search.php',
     '--lby-nirn' : 'https://librey.nirn.quest/search.php',
     '--lby-devol' : 'https://librey.devol.it/search.php',
+    '--lby-castor' : 'https://librex.yogeshlamichhane.com.np/search.php',
 
     // LIBREX INSTANCES
     // BY THE WAY, LIBREX IS DEPRECATED AND ONLY DECENTRALA IS STILL RUNNING IT. THE OTHER URLS ARE KEPT UP FOR ARCHIVING PURPOSES.
