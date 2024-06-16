@@ -168,6 +168,23 @@ form.addEventListener('submit', (event) => {
 
     '--marginalia' : 'https://search.marginalia.nu/search',
     '--mgn' : 'https://search.marginalia.nu/search',
+
+    '--exa' : 'https://exa.ai/search',
+    
+    '--perplexity' : 'https://perplexity.ai/search',
+    '--pxt' : 'https://perplexity.ai/search',
+
+    '--phind' : 'https://www.phind.com/search',
+    '--phd' : 'https://www.phind.com/search',
+
+    '--morphic' : 'https://www.morphic.sh/search',
+    '--mph' : 'https://www.morphic.sh/search',
+
+    '--searchmysite' : 'https://searchmysite.net/search/',
+    '--sms' : 'https://searchmysite.net/search/',
+
+    '--teclis' : 'https://teclis.com/search',
+    '--tcl' : 'https://teclis.com/search',
     
     // SEARXNG INSTANCES
 
@@ -301,7 +318,7 @@ if (searchEngine in searchEngineMap) {
       const searchParams = new URLSearchParams();
 
     // FOR ENGINES THAT USE "QUERY" INSTEAD OF "Q"
-    if (['--swisscows', '--swc', '--sc', '--swiss', '--seekr', '--skr'].includes(searchEngine)) {
+    if (['--swisscows', '--swc', '--sc', '--swiss', '--seekr', '--skr', '--mgn', '--marginalia'].includes(searchEngine)) {
       searchParams.set('query', encodedQuery);
     } 
 
