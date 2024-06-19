@@ -185,6 +185,9 @@ form.addEventListener('submit', (event) => {
 
     '--teclis' : 'https://teclis.com/search',
     '--tcl' : 'https://teclis.com/search',
+
+    '--secretsearchenginelabs' : 'http://www.secretsearchenginelabs.com/find/',
+    '--ssel' : 'http://www.secretsearchenginelabs.com/find/',
     
     // SEARXNG INSTANCES
 
@@ -308,7 +311,7 @@ if (searchEngine in searchEngineMap) {
   let redirectUrl = '';
 
   // FOR SEARCH ENGINES THAT ARE FUCKED UP, THAT I PRETTY MUCH IDK HOW THEY WORK, AND THAT TOOK A LOOOOOOONG WHILE TO FIGURE IT (DO IT YOURSELF IF YOU WANT TO CHANGE IT)
-  if (['--wikipedia', '--wkp', '--wiki', '--asg', '--astiango', '--flnf', '--fileinfo', '--file'].includes(searchEngine)) {
+  if (['--wikipedia', '--wkp', '--wiki', '--asg', '--astiango', '--flnf', '--fileinfo', '--file', '--secretsearchenginelabs', '--ssel'].includes(searchEngine)) {
     const encodedQuery = encodeURIComponent(query).replace(/%20/g, ' ');
     redirectUrl = `${searchUrl}${encodedQuery}`;
   } 
