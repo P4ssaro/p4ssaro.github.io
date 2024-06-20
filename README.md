@@ -18,3 +18,20 @@ Onion only, country restricted and non-english only search engines are not inclu
 ---
 
 The list of search engines can be found on the documentation page of the website, at p4ssaro.github.io/docs.
+
+## Next in line
+
+These are the next search engines in the line to be added for Pássaro. They are stil to be reviewed to see if they are really worthy of being added to the website. Most of them are small, isolated, indie search engines and are probably not well established or polished, or are an extremely new startup that is not proven itself. Here is the list:
+
+- Boardreder
+- VHSearch
+- Metaphor
+- Childishsm
+- Newgle
+- Old'aVista
+- BananaSlug
+- deepweb_searching.htm
+- Moonjump
+- Oldest Search
+- Carrot2
+- Million Short
