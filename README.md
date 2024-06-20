@@ -1,5 +1,5 @@
 # Pássaro Search
-[Pássaro](https://p4ssaro.github.io/) is a metasearch engine that serves as an universal search box for 50+ search engines and websites, not needing to visit each specific website, instead, just typing its name and be redirected to this website with the search you made in Pássaro's search bar.
+[Pássaro](https://p4ssaro.github.io/) is a metasearch engine that serves as an universal search box for 60+ search engines and websites, not needing to visit each specific website, instead, just typing its name and be redirected to this website with the search you made in Pássaro's search bar.
 
 Occasional updates throught the year and massive update waves on April of each year.
 
