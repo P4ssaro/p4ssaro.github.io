@@ -35,3 +35,4 @@ These are the next search engines in the line to be added for Pássaro. They are
 - Oldest Search
 - Carrot2
 - Million Short
+- Stuff in https://web.archive.org/web/20220801085120/https://fravia.net/main.htm
