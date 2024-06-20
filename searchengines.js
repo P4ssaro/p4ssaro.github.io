@@ -188,6 +188,12 @@ form.addEventListener('submit', (event) => {
 
     '--secretsearchenginelabs' : 'http://www.secretsearchenginelabs.com/find/',
     '--ssel' : 'http://www.secretsearchenginelabs.com/find/',
+
+    '--tusk' : 'https://tusksearch.com/search',
+    '--tsk' : 'https://tusksearch.com/search',
+
+    '--heexy' : 'https://heexy.org/search',
+    '--hxy' : 'https://heexy.org/search',
     
     // SEARXNG INSTANCES
 
