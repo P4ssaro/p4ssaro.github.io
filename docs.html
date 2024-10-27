@@ -20,8 +20,8 @@
 	</header>
     <div class="article">
         <h2>Docs</h2>
-        <p>To use Pássaro, you'll need to specify your desired search engine first, with "--" and its code. Every search engine in Pássaro has its name, like Wikipedia (it would be "--wikipedia"), and its abbreviation and other casual forms of writing, for example, wikipedia has 3, "--wikipedia", "--wkp" and "--wiki". There is no general rule for abbreviating the names, but most of the time there is only 2, the full name (wikipedia) a set abbreviation (wkp), and sometimes alternative forms of writing or alternative abbreviations, like "wiki". Another case is duckduckgo's, it has the --duckduckgo (full name) name, the --duck (alternative) name, the --dgg (set abbreviation) and the --dggo (alternative abbreviation) name. A reminder that binominal search engines, like Duck Duck Go, will have their spaces or "-"s removed, like "duckduckgo" and that all names must be in lowercase. Here is the full list of abbreviations:</p>
-	<p>*To use them, in the search bar type: <code>--[search engine name]: [your input]</code>.</p>
+        <p>To use Pássaro, you'll need to specify your desired search engine first, with "--" and its code. Every search engine in Pássaro has its name, like Wikipedia (it would be "--wikipedia"), and its abbreviation and other casual forms of writing, for example, wikipedia has 3, <code>--wikipedia:</code>, <code>--wkp:</code> and <code>--wiki:</code>. There is no general rule for abbreviating the names, but most of the time there is only 2, the full name (wikipedia) a set abbreviation (wkp), and sometimes alternative forms of writing or alternative abbreviations, like "wiki". Another case is duckduckgo's, it has the <code>--duckduckgo</code> (full name) name, the <code>--duck</code> (alternative) name, the <code>--dgg</code> (set abbreviation) and the <code>--dggo</code> (alternative abbreviation) name. A reminder that binominal search engines, like Duck Duck Go, will have their spaces or "-"s removed, like "duckduckgo" and that all names must be in lowercase. Here is the full list of abbreviations:</p>
+	<p>*TLDR: To use them, in the search bar type: <code>--[search engine name]: [your input]</code>.</p>
 	<h3>Regular SEs</h3>
 <table>
     <thead>
@@ -402,7 +402,7 @@
         <td>none</td>
         <td>ggsearch.eu.org</td>
         <td>June 2024</td>
-      </tr
+      </tr>
       <tr>
         <td>SearXNG</td>
         <td>none</td>
@@ -532,7 +532,11 @@
 	    
 	    <p>Pássaro not only supports regular search engines like DuckDuckGo, Ecosia or Wikipedia. It also supports decentralized ones based on self-hosted instances, like SearXNG, LibreX/Y, Whoogle, etc. Frankly, as there are many different instances of many different decentralized search engines, I'm way too busy to store them all in a fancy table, and as you are using these decentralized metasearch engines, you are more than likely to be a nerdy user privacy paranoid, and not a normal user, which means you can manually go to <a src="https://github.com/P4ssaro/p4ssaro.github.io/blob/main/searchengines.js" target="_blank">searchengines.js</a> and scroll down until you see the comment of your search engine (//SEARXNG, //WHOOGLE, etc.) to see what is the code for your favorite instance.</p>
 	    
-	    <p>To use SearXNG basically, instead of typing <code>--name:</code>, it will be <code>--xng-name:</code>, for example: <code>--xng-ca:</code>/<code>--xng-canada:</code>, <code>--xng-xowtf</code>, <code>--xng-privau</code>, etc. About 75% of the SearXNG instances in searx.space are supported, and more are to come when I have time.</p>
+	    <p>For example, to use SearXNG, basically, instead of typing <code>--name:</code>, it will be <code>--xng-name:</code>, for example: <code>--xng-ca:</code>/<code>--xng-canada:</code>, <code>--xng-xowtf</code>, <code>--xng-privau</code>, etc. About 75% of the SearXNG instances in searx.space are supported, and more are to come when I have time.</p>
+
+      <h3>ISBN Lookup</h3>
+
+      <p>Pássaro also has a built-in ISBN book lookup that doubles as a Google Books/Goodreads/Wordcat metasearch engine. To use it, just type <code>--isbn:</code> and paste the number you want. If you don't know, a ISBN is an universal code that all books have. To find one, generally it is printed near the barcode of the book you've bought. You can also just search in Wikipedia references, it depends if you are actually trying to get information about a book or just for fun. Either way, try it, Idk. Also, while using it, keep in mind that this feature functions like a portal, where you can get basic information about a book quickly and in a practical manner, but if you want to dive deep into it, you can go to one of the linked websites that have more information about it. Oh yeah, and this feature uses OpenLibrary's API.</p>
 
     </div>
 
