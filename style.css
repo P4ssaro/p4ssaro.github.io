@@ -3,6 +3,7 @@
   --secondary-color: #0f1420;
   --tertiary-color: #0a0e16;
   --text-color: #e0f4fc;
+  --secondary-text-color: #7a858a;
 }
 
 * {font-family: 'Courier New', Courier, monospace;}
@@ -12,6 +13,7 @@ body {
   padding: 0;
   color: var(--primary-color);
   overflow-x: hidden;
+  background-color: var(--secondary-color);
 }
 
 header {
@@ -159,4 +161,56 @@ code {
 .logomark, .logotype h1 {
   display: inline-block;
   color: #0a0e16;
+}
+
+#isbn-info {
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  width: 650px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 200ms ease;
+}
+
+#isbn-info.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#isbn-content {
+  text-align: left;
+  background-color: var(--tertiary-color);
+  border-radius: 24px;
+  color: var(--text-color);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px 10px;
+  padding: 50px;
+  min-height: 250px;
+}
+
+#isbn-details p {
+  margin: 9px 0px;
+  font-size: 18px;
+  padding: 0;
+}
+
+#isbn-details a, #isbn-details a:visited, #isbn-details a:hover {
+  color: var(--primary-color);
+}
+
+#isbn-x {
+  cursor: pointer;
+  color: var(--secondary-text-color);
+}
+
+#isbn-cover {
+  height: 250px;
+  margin-left: 15px;
+  float: right;
+}
+
+#isbn-text {
+  color: var(--secondary-text-color);
 }

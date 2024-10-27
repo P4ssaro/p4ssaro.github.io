@@ -1,8 +1,53 @@
 const form = document.querySelector('form');
 const input = form.querySelector('input[type="text"]');
 
+async function handleIsbnSearch(isbn) {
+  try {
+    const response = await fetch(`https://openlibrary.org/api/books?bibkeys=ISBN:${isbn}&jscmd=data&format=json`);
+    const data = await response.json();
+    const book = data[`ISBN:${isbn}`];
+
+    if (book) {
+      const detailsDiv = document.getElementById("isbn-details");
+      const coverImg = document.getElementById("isbn-cover");
+
+      coverImg.src = book.cover ? book.cover.medium : '';
+      coverImg.alt = "Cover N/A";
+
+      detailsDiv.innerHTML = `
+        <p id="isbn-title"><span onclick="closebox()" id="isbn-x">x</span> <b>${book.title || 'N/A'}</b></p>
+        <p><i>Author:</i> <span id="isbn-text">${book.authors ? book.authors.map(a => a.name).join(', ') : 'Unknown'}</span></p>
+        <p><i>Date:</i> <span id="isbn-text">${book.publish_date || 'N/A'}</span></p>
+        <p><i>Publisher:</i> <span id="isbn-text">${book.publishers ? book.publishers.map(p => p.name).join(', ') : 'N/A'}</span></p>
+        <p><i>Location:</i> <span id="isbn-text">${book.publish_places ? book.publish_places.map(p => p.name).join(', ') : 'N/A'}</span></p>
+        <p><i>Pages:</i> <span id="isbn-text">${book.number_of_pages || 'N/A'}</span></p>
+        <p><i>ISBN:</i> <span id="isbn-text">${isbn}</span></p> 
+          <a href="https://www.goodreads.com/search?q=${isbn}" target="_blank">Goodreads</a> | 
+          <a href="https://books.google.com/books?vid=ISBN${isbn}" target="_blank">Google Books</a> | 
+          <a href="https://www.worldcat.org/isbn/${isbn}" target="_blank">WorldCat</a>
+        </p>
+      `;
+
+      document.getElementById("isbn-info").classList.add('show');
+    } else {
+      window.location.href = '404';
+    }
+  } catch (error) {
+    console.error("error fetching isbn - ", error);
+    window.location.href = '404';
+  }
+}
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
+
+  const inputText = input.value.trim();
+  const [searchEngine, query] = inputText.split(':').map((part) => part.trim().toLowerCase());
+
+  if (searchEngine === '--isbn') {
+    handleIsbnSearch(query);
+    return;
+  }
 
   const searchEngineMap = {
     '--google': 'https://www.google.com/search',
@@ -309,9 +354,6 @@ form.addEventListener('submit', (event) => {
     
   };
 
-  const inputText = input.value.trim();
-  const [searchEngine, query] = inputText.split(':').map((part) => part.trim().toLowerCase());
-
 if (searchEngine in searchEngineMap) {
   const searchUrl = searchEngineMap[searchEngine];
   let redirectUrl = '';
@@ -359,12 +401,16 @@ if (searchEngine in searchEngineMap) {
 
   window.location.href = redirectUrl;
 } else {
-  const googleSearchUrl = searchEngineMap['google'];
+  const braveSearchUrl = searchEngineMap['--brave'];
   const encodedQuery = encodeURIComponent(inputText).replace(/%20/g, '+');
   const searchParams = new URLSearchParams({ q: encodedQuery });
-  const redirectUrl = `${googleSearchUrl}?${searchParams.toString()}`;
+  const redirectUrl = `${braveSearchUrl}?${searchParams.toString()}`;
 
   window.location.href = redirectUrl;
 }
   
 });
+
+async function closebox() {
+  document.getElementById("isbn-info").classList.toggle('show');
+}

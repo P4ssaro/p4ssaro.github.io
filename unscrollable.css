@@ -1,1 +1,9 @@
-body{overflow:hidden;}footer{position:absolute;height:20px;}
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+footer {
+    position: fixed;
+    height: 20px;
+}
